@@ -7,26 +7,45 @@
 - Ксенія Денисова
 
 **Структура проєкту:**
+
 /lamascotte/
-│
+
 ├── /css/ # Стилі сайту
+
 │── /html/ # Спеціалізовані файли .html
-│    ├── cart.html # Кошик
-│    ├── catalog.html # Каталог товарів
-│    ├── custom.html # Кастомізація товарів
-│    ├── login.html # Вхід
-│    ├── product_information.html # Інформація про продукт
-│    ├── quiz.html # Квіз
-│    ├── register.html # Реєстрація
-│    ├── wish_list.html # Вподобайка
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── cart.html # Кошик
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── catalog.html # Каталог товарів
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── custom.html # Кастомізація товарів
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── login.html # Вхід
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── product_information.html # Інформація про продукт
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── quiz.html # Квіз
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── register.html # Реєстрація
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── wish_list.html # Вподобайка
+
 ├── /js/ # Скрипти JavaScript
+
 ├── /images/ # Зображення
+
 ├── index.html # Головна сторінка
+
 ├── about.html # Про нас
+
 ├── contacts.html # Контакти
+
 ├── delivery.html # Доставка
+
 ├── partners.html # Партнери
+
 └── prices.html # Ціни
+
 
 **Примітки:**  
 - Частково реалізовані сторінки будуть доповнені динамічним функціоналом за допомогою JS та бази даних у майбутньому.  
