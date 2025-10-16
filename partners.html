@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Контакти</title>
+</head>
+
+<body>
+    <!-- Навігація -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+        <b>la mascotte</b>
+        <nav>
+            <a href="index.html" style="margin-right: 15px;">Головна</a>
+            <a href="html/wish_list.html" style="margin-right: 15px;">Вподобайка</a>
+            <a href="html/catalog.html" style="margin-right: 15px;">Каталог</a>
+            <a href="html/custom.html" style="margin-right: 15px;">Кастом</a>
+            <a href="html/quiz.html" style="margin-right: 15px;">Квіз</a>
+            <a href="html/cart.html" style="margin-right: 15px;">Кошик</a>
+            <a href="/html/login.html">Увійти</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Співпраця та Партнерство</h1>
+        <p>
+            Ми — молодий та амбітний український бренд, відкритий до нових ідей
+            та взаємовигідної співпраці. Якщо ви поділяєте нашу пристрасть до високої
+            парфумерії та унікальних ароматів, ми будемо раді обговорити спільні проєкти.
+        </p>
+
+        <p><b>Ми зацікавлені у співпраці з:</b></p>
+        <ul>
+            <li>
+                <b>Блогерами та інфлюенсерами:</b> Якщо ваша аудиторія цінує якість,
+                індивідуальність та красу, ми готові надати наші аромати для оглядів
+                та проведення спільних конкурсів.
+            </li>
+
+            <li>
+                <b>Офлайн-магазинами та бутиками:</b> Розглядаємо можливість розміщення
+                нашої продукції на ваших торгових площах (дропшипінг або оптова закупівля).
+            </li>
+
+            <li>
+                <b>Корпоративними клієнтами:</b> Створення унікальних ароматів на замовлення
+                для вашого бренду, заходів або як корпоративні подарунки.
+            </li>
+
+            <li>
+                <b>Іншими креативними проєктами:</b> Ми відкриті до колаборацій з художниками,
+                дизайнерами та митцями для створення лімітованих колекцій.
+            </li>
+        </ul>
+
+        <p>Що ми пропонуємо:</p>
+        <ul>
+            <li>Унікальний та якісний продукт, створений з любов'ю та увагою до деталей.</li>
+            <li>Індивідуальний підхід до кожного партнера.</li>
+            <li>Гнучкі умови співпраці.</li>
+        </ul>
+
+        <p>
+            Для обговорення деталей партнерства, будь ласка, заповніть форму нижче. Ми з нетерпінням чекаємо на ваші пропозиції!
+        </p>
+
+        <!-- Форма для співпраці -->
+        <form action="https://formspree.io/f/xovkyeyk" method="post">
+            <label>Ваше ім’я:</label><br>
+            <input type="text" name="name" required><br>
+
+            <label>Електронна пошта:</label><br>
+            <input type="email" name="email" required><br>
+
+            <label>Коротко про вас/ваш проєкт:</label><br>
+            <textarea name="message" rows="5" required></textarea><br>
+
+            <label>Тип бажаної співпраці (Оберіть один або декілька варіантів):</label><br>
+
+            <input type="checkbox" id="blogger" name="cooperation" value="Блогер/Інфлюенсер">
+            <label for="blogger">Блогер / Інфлюенсер</label><br>
+
+            <input type="checkbox" id="opt" name="cooperation" value="Опт/Дропшипінг">
+            <label for="opt">Опт / Дропшипінг</label><br>
+
+            <input type="checkbox" id="corporate" name="cooperation" value="Корпоративне замовлення">
+            <label for="corporate">Корпоративне замовлення</label><br>
+
+            <input type="checkbox" id="other" name="cooperation" value="Інше">
+            <label for="other">Інше (опишіть нижче)</label><br>
+
+            <textarea name="other_text" rows="3" cols="40" placeholder="Опишіть свій варіант..."></textarea><br>
+
+            <label>Деталі пропозиції</label><br>
+            <textarea name="details" rows="5" required></textarea><br>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </main>
+
+
+    <!-- Навігація -->
+    <footer>
+        <hr style="width: 1300px;">
+
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; text-align: center; ">
+
+            <!-- Товар -->
+            <div>
+                <h4>Товар</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="html/catalog.html">Каталог</a></li>
+                    <li><a href="html/quiz.html">Квіз</a></li>
+                    <li><a href="html/custom.html">Кастом</a></li>
+                </ul>
+            </div>
+
+            <!-- Доставка і оплата -->
+            <div>
+                <h4>Доставка і оплата</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="prices.html">Ціна послуг</a></li>
+                    <li><a href="html/cart.html">Кошик</a></li>
+                </ul>
+            </div>
+
+            <!-- Про нас -->
+            <div>
+                <h4>Про нас</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="partners.html">Партнерство</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <p style="margin-top: 15px;">&copy; 2025 la mascotte. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
