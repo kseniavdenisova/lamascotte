@@ -11,6 +11,23 @@
 /lamascotte/
 
 ├── /css/ # Стилі сайту
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── about.css # Про нас
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── adapt.css # Адаптація під мобільні телефони
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── contacts.css # Контакти
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── image.css # Картинки
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── index.css # Головна сторінка
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── login.css # Увійти
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── partners.css # Партнерство
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── register.css # Реєстрація
+
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── style.css # Стилі
 
 │── /html/ # Спеціалізовані файли .html
 
@@ -46,7 +63,12 @@
 
 └── prices.html # Ціни
 
+**В цій версії було:**
+- Впроваджено Flexbox та CSS Grid для створення адаптивних макетів.
+- Реалізовано повноцінний адаптивний дизайн з використанням медіа-запитів та бургер-меню для мобільних пристроїв.
+- Створено модульну структуру CSS-файлів з кросбраузерною сумісністю без необхідності додаткових виправлень.
+- Застосовано сучасні підходи до стилізації форм, включаючи HTML5-валідацію та інтерактивні ефекти для поліпшення UX.
 
 **Примітки:**  
 - Частково реалізовані сторінки будуть доповнені динамічним функціоналом за допомогою JS та бази даних у майбутньому.  
-- Стилі та інтерактивність поліпшиться в майбутьому через CSS та JS.
+- Інтерактивність поліпшиться в майбутьому через JS.
