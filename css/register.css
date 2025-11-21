@@ -1,0 +1,70 @@
+﻿/* Контейнер форми */
+.register-card {
+    width: 320px;
+    margin: 30px auto;
+    background-color: #fdfaf7;
+    padding: 20px 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Заголовок */
+.form-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Форма */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+    /* Лейбли + інпут */
+    .register-form label {
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Інпут */
+    .register-form input {
+        border: none;
+        border-bottom: 2px solid #000;
+        background: none;
+        padding: 5px 0;
+        outline: none;
+        font-size: 14px;
+    }
+
+        .register-form input:focus {
+            border-bottom-color: #8a3ffc;
+        }
+
+/* Кнопка */
+.btn-submit {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+    .btn-submit:hover {
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+/* Посилання під формою */
+.login-link {
+    text-align: center;
+    margin-top: -15px;
+    font-size: 14px;
+}
