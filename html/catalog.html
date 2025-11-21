@@ -1,67 +1,90 @@
 ﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-    <title>Контакти</title>
+    <title>Каталог</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Навігація -->
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+    <header>
         <b>la mascotte</b>
-        <nav>
-            <a href="../index.html" style="margin-right: 15px;">Головна</a>
-            <a href="wish_list.html" style="margin-right: 15px;">Вподобайка</a>
-            <a href="custom.html" style="margin-right: 15px;">Кастом</a>
-            <a href="quiz.html" style="margin-right: 15px;">Квіз</a>
-            <a href="cart.html" style="margin-right: 15px;">Кошик</a>
+
+        <button class="menu-toggle" aria-label="Відкрити меню">
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+        <nav class="main-nav">
+            <a href="../index.html">Головна</a>
+            <a href="wish_list.html">Вподобайка</a>
+            <a href="custom.html">Кастом</a>
+            <a href="quiz.html">Квіз</a>
+            <a href="cart.html">Кошик</a>
             <a href="login.html">Увійти</a>
         </nav>
     </header>
 
     <main>
+        <hr>
         <h1>Каталог</h1>
 
-        <img src="../images/coming_soon.jpg" alt="">
+        <img src="../images/coming_soon.jpg" alt="" class="coming_soon">
+
+        <hr>
     </main>
 
     <!-- Навігація -->
     <footer>
-        <hr style="width: 1300px;">
-
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; text-align: center;">
-
-            <!-- Товар -->
-            <div>
-                <h4>Товар</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="quiz.html">Квіз</a></li>
-                    <li><a href="custom.html">Кастом</a></li>
-                </ul>
-            </div>
-
-            <!-- Доставка і оплата -->
-            <div>
-                <h4>Доставка і оплата</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="../delivery.html">Доставка</a></li>
-                    <li><a href="../prices.html">Ціна послуг</a></li>
-                    <li><a href="cart.html">Кошик</a></li>
-                </ul>
-            </div>
-
-            <!-- Про нас -->
-            <div>
-                <h4>Про нас</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="../about.html">Про нас</a></li>
-                    <li><a href="../contacts.html">Контакти</a></li>
-                    <li><a href="../partners.html">Партнерство</a></li>
-                </ul>
-            </div>
-
+        <!-- Товар -->
+        <div>
+            <h4>Товар</h4>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="quiz.html">Квіз</a></li>
+                <li><a href="custom.html">Кастом</a></li>
+            </ul>
         </div>
-        <p style="margin-top: 15px;">&copy; 2025 la mascotte. Всі права захищені.</p>
+
+        <!-- Доставка і оплата -->
+        <div>
+            <h4>Доставка і оплата</h4>
+            <ul>
+                <li><a href="../delivery.html">Доставка</a></li>
+                <li><a href="../prices.html">Ціна послуг</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+            </ul>
+        </div>
+
+        <!-- Про нас -->
+        <div>
+            <h4>Про нас</h4>
+            <ul>
+                <li><a href="../about.html">Про нас</a></li>
+                <li><a href="../contacts.html">Контакти</a></li>
+                <li><a href="../partners.html">Партнерство</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; 2025 la mascotte. Всі права захищені.</p>
     </footer>
+
+    <script>
+        // Відкриття/закриття меню
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+
+        // Закриваємо меню при кліку на посилання
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.main-nav').classList.remove('active');
+            });
+        });
+    </script>
+
 </body>
 </html>
