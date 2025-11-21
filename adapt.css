@@ -1,0 +1,124 @@
+﻿/* Адаптивне меню */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+/* Стилі для самого меню */
+.main-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+    .main-nav a {
+        font-size: 16px;
+        text-decoration: none;
+        color: #000;
+        transition: color 0.2s;
+    }
+
+        .main-nav a:hover {
+            color: #8a3ffc;
+        }
+
+/* Мобільна версія */
+@media (max-width: 868px) {
+    .menu-toggle
+
+{
+    display: block;
+    order: -1;
+}
+
+header .logo {
+    margin-left: 50px;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 100px 30px 40px;
+    transition: left 0.35s ease;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+    .main-nav.active {
+        left: 0;
+    }
+
+    .main-nav a {
+        font-size: 20px;
+        padding: 12px 0;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+        .main-nav a:last-child {
+            border-bottom: none;
+        }
+
+    .background_main {
+        height: 70px;
+    }
+
+    /* Адаптація для сторінки "Про нас" */
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .about-header h1 {
+            min-width: auto;
+            margin-bottom: 20px;
+        }
+
+    .logo {
+        width: 150px;
+        margin-top: 270px;
+        margin-right: 40px;
+    }
+
+    .about-divider {
+        max-width: 100%;
+    }
+
+    iframe {
+        min-height: 600px;
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+    /* Адаптація для сторінки "Партнерство" */
+    .cooperation-card {
+        width: 90%;
+        max-width: none;
+        margin: 40px auto 20px;
+        padding: 20px;
+        position: static;
+        order: 1;
+    }
+    /* Адаптація для сторінки "Контакти" */
+    .contact-card {
+        width: 90%;
+        max-width: none;
+        margin: 40px auto 20px;
+        padding: 20px;
+        position: static;
+    }
+}

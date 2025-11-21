@@ -1,53 +1,64 @@
 ﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-    <title>Контакти</title>
+    <title>Партнерство</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Навігація -->
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+    <header>
         <b>la mascotte</b>
-        <nav>
-            <a href="index.html" style="margin-right: 15px;">Головна</a>
-            <a href="html/wish_list.html" style="margin-right: 15px;">Вподобайка</a>
-            <a href="html/catalog.html" style="margin-right: 15px;">Каталог</a>
-            <a href="html/custom.html" style="margin-right: 15px;">Кастом</a>
-            <a href="html/quiz.html" style="margin-right: 15px;">Квіз</a>
-            <a href="html/cart.html" style="margin-right: 15px;">Кошик</a>
+
+        <button class="menu-toggle" aria-label="Відкрити меню">
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+        <nav class="main-nav">
+            <a href="index.html">Головна</a>
+            <a href="html/wish_list.html">Вподобайка</a>
+            <a href="html/catalog.html">Каталог</a>
+            <a href="html/custom.html">Кастом</a>
+            <a href="html/quiz.html">Квіз</a>
+            <a href="html/cart.html">Кошик</a>
             <a href="/html/login.html">Увійти</a>
         </nav>
     </header>
 
     <main>
+        <hr>
         <h1>Співпраця та Партнерство</h1>
         <p>
             Ми — молодий та амбітний український бренд, відкритий до нових ідей
-            та взаємовигідної співпраці. Якщо ви поділяєте нашу пристрасть до високої
-            парфумерії та унікальних ароматів, ми будемо раді обговорити спільні проєкти.
+            та взаємовигідної співпраці. Якщо<br> ви поділяєте нашу пристрасть до високої
+            парфумерії та унікальних ароматів, ми будемо раді обговорити<br> спільні проєкти.
         </p>
 
         <p><b>Ми зацікавлені у співпраці з:</b></p>
         <ul>
             <li>
                 <b>Блогерами та інфлюенсерами:</b> Якщо ваша аудиторія цінує якість,
-                індивідуальність та красу, ми готові надати наші аромати для оглядів
+                індивідуальність та красу, ми<br> готові надати наші аромати для оглядів
                 та проведення спільних конкурсів.
             </li>
 
             <li>
                 <b>Офлайн-магазинами та бутиками:</b> Розглядаємо можливість розміщення
-                нашої продукції на ваших торгових площах (дропшипінг або оптова закупівля).
+                нашої продукції на ваших<br> торгових площах (дропшипінг або оптова закупівля).
             </li>
 
             <li>
                 <b>Корпоративними клієнтами:</b> Створення унікальних ароматів на замовлення
-                для вашого бренду, заходів або як корпоративні подарунки.
+                для вашого бренду,<br> заходів або як корпоративні подарунки.
             </li>
 
             <li>
                 <b>Іншими креативними проєктами:</b> Ми відкриті до колаборацій з художниками,
-                дизайнерами та митцями для створення лімітованих колекцій.
+                дизайнерами та<br> митцями для створення лімітованих колекцій.
             </li>
         </ul>
 
@@ -59,41 +70,68 @@
         </ul>
 
         <p>
-            Для обговорення деталей партнерства, будь ласка, заповніть форму нижче. Ми з нетерпінням чекаємо на ваші пропозиції!
+            Для обговорення деталей партнерства, будь ласка, заповніть форму нижче. Ми з нетерпінням чекаємо на<br> ваші пропозиції!
         </p>
 
         <!-- Форма для співпраці -->
-        <form action="https://formspree.io/f/xovkyeyk" method="post">
-            <label>Ваше ім’я:</label><br>
-            <input type="text" name="name" required><br>
+        <div class="cooperation-card">
+            <h2>Форма співпраці</h2>
+            <form action="https://formspree.io/f/xovkyeyk" method="post">
 
-            <label>Електронна пошта:</label><br>
-            <input type="email" name="email" required><br>
+                <label>
+                    Ваше ім’я:
+                    <input type="text" name="name" required>
+                    <span class="error-msg">Введіть ім’я</span>
+                </label>
 
-            <label>Коротко про вас/ваш проєкт:</label><br>
-            <textarea name="message" rows="5" required></textarea><br>
+                <label>
+                    Електронна пошта:
+                    <input type="email" name="email" required>
+                    <span class="error-msg">Введіть email</span>
+                </label>
 
-            <label>Тип бажаної співпраці (Оберіть один або декілька варіантів):</label><br>
+                <label>
+                    Коротко про вас/ваш проєкт:
+                    <textarea name="message" minlength="10" maxlength="499" rows="1" required></textarea>
+                    <span class="error-msg">Опишіть себе/ваш проєкт</span>
+                </label>
 
-            <input type="checkbox" id="blogger" name="cooperation" value="Блогер/Інфлюенсер">
-            <label for="blogger">Блогер / Інфлюенсер</label><br>
+                <label>Тип бажаної співпраці:</label>
 
-            <input type="checkbox" id="opt" name="cooperation" value="Опт/Дропшипінг">
-            <label for="opt">Опт / Дропшипінг</label><br>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="cooperation" value="Блогер/Інфлюенсер">
+                    Блогер / Інфлюенсер
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="cooperation" value="Опт/Дропшипінг">
+                    Опт / Дропшипінг
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="cooperation" value="Корпоративне замовлення">
+                    Корпоративне замовлення
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="cooperation" value="Інше">
+                    Інше (опишіть нижче)
+                </label>
 
-            <input type="checkbox" id="corporate" name="cooperation" value="Корпоративне замовлення">
-            <label for="corporate">Корпоративне замовлення</label><br>
+                <label>
+                    Опишіть свій варіант:
+                    <textarea name="other_text" minlength="10" maxlength="499" rows="1"></textarea>
+                </label>
 
-            <input type="checkbox" id="other" name="cooperation" value="Інше">
-            <label for="other">Інше (опишіть нижче)</label><br>
+                <label>
+                    Деталі пропозиції:
+                    <textarea name="details" minlength="10" maxlength="499" rows="1" required></textarea>
+                    <span class="error-msg">Опишіть деталі пропозиції</span>
+                </label>
 
-            <textarea name="other_text" rows="3" cols="40" placeholder="Опишіть свій варіант..."></textarea><br>
+                <button type="submit">Надіслати</button>
 
-            <label>Деталі пропозиції</label><br>
-            <textarea name="details" rows="5" required></textarea><br>
+            </form>
+        </div>
 
-            <button type="submit">Надіслати</button>
-        </form>
+        <hr>
     </main>
 
 
@@ -101,40 +139,51 @@
     <footer>
         <hr style="width: 1300px;">
 
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; text-align: center; ">
-
-            <!-- Товар -->
-            <div>
-                <h4>Товар</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="html/catalog.html">Каталог</a></li>
-                    <li><a href="html/quiz.html">Квіз</a></li>
-                    <li><a href="html/custom.html">Кастом</a></li>
-                </ul>
-            </div>
-
-            <!-- Доставка і оплата -->
-            <div>
-                <h4>Доставка і оплата</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="prices.html">Ціна послуг</a></li>
-                    <li><a href="html/cart.html">Кошик</a></li>
-                </ul>
-            </div>
-
-            <!-- Про нас -->
-            <div>
-                <h4>Про нас</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="about.html">Про нас</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                    <li><a href="partners.html">Партнерство</a></li>
-                </ul>
-            </div>
-
+        <!-- Товар -->
+        <div>
+            <h4>Товар</h4>
+            <ul>
+                <li><a href="html/catalog.html">Каталог</a></li>
+                <li><a href="html/quiz.html">Квіз</a></li>
+                <li><a href="html/custom.html">Кастом</a></li>
+            </ul>
         </div>
-        <p style="margin-top: 15px;">&copy; 2025 la mascotte. Всі права захищені.</p>
+
+        <!-- Доставка і оплата -->
+        <div>
+            <h4>Доставка і оплата</h4>
+            <ul>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="prices.html">Ціна послуг</a></li>
+                <li><a href="html/cart.html">Кошик</a></li>
+            </ul>
+        </div>
+
+        <!-- Про нас -->
+        <div>
+            <h4>Про нас</h4>
+            <ul>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="partners.html">Партнерство</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; 2025 la mascotte. Всі права захищені.</p>
     </footer>
+
+    <script>
+        // Відкриття/закриття меню
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+
+        // Закриваємо меню при кліку на посилання
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.main-nav').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

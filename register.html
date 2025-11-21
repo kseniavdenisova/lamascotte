@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <b>la mascotte</b>
+
+        <button class="menu-toggle" aria-label="Відкрити меню">
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+        <nav class="main-nav">
+            <a href="../index.html">Головна</a>
+            <a href="wish_list.html">Вподобайка</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="custom.html">Кастом</a>
+            <a href="quiz.html">Квіз</a>
+            <a href="cart.html">Кошик</a>
+            <a href="login.html">Увійти</a>
+        </nav>
+    </header>
+
+    <main>
+        <hr>
+        <div class="register-card">
+            <h2 class="form-title">Реєстрація</h2>
+
+            <form class="register-form">
+
+                <label>
+                    Ім'я:
+                    <input type="text" placeholder="Введіть ваше ім'я" required>
+                </label>
+
+                <label>
+                    Email:
+                    <input type="text" placeholder="Введіть вашу пошту" required>
+                </label>
+
+                <label>
+                    Номер телефону:
+                    <input type="tel" placeholder="Введіть номер телефону" required>
+                </label>
+
+                <label>
+                    Дата народження:
+                    <input type="date" required>
+                </label>
+
+                <label>
+                    Пароль:
+                    <input type="password" placeholder="Введіть пароль" required>
+                </label>
+
+                <label>
+                    Продублюйте пароль:
+                    <input type="password" placeholder="Продублюйте пароль" required>
+                </label>
+
+                <button type="submit" class="btn-submit">Зареєструватись</button>
+            </form>
+        </div>
+
+        <p class="login-link">
+            Вже маєте акаунт?
+            <a href="login.html">Увійти</a>
+        </p>
+
+        <hr>
+    </main>
+
+    <footer>
+        <!-- Товар -->
+        <div>
+            <h4>Товар</h4>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="quiz.html">Квіз</a></li>
+                <li><a href="custom.html">Кастом</a></li>
+            </ul>
+        </div>
+
+        <!-- Доставка і оплата -->
+        <div>
+            <h4>Доставка і оплата</h4>
+            <ul>
+                <li><a href="../delivery.html">Доставка</a></li>
+                <li><a href="../prices.html">Ціна послуг</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+            </ul>
+        </div>
+
+        <!-- Про нас -->
+        <div>
+            <h4>Про нас</h4>
+            <ul>
+                <li><a href="../about.html">Про нас</a></li>
+                <li><a href="../contacts.html">Контакти</a></li>
+                <li><a href="../partners.html">Партнерство</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 la mascotte. Всі права захищені.</p>
+    </footer>
+
+    <script>
+        // Відкриття/закриття меню
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+
+        // Закриваємо меню при кліку на посилання
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.main-nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
