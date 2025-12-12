@@ -1,9 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-    <title>Реєстрація</title>
+    <title>Бокс мініатюрок</title>
     <link rel="icon" href="../images/logo.png" type="image/jpeg">
-
     <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,7 +10,7 @@
 </head>
 
 <body>
-
+    <!-- Навігація -->
     <header>
         <b>la mascotte</b>
 
@@ -36,54 +35,43 @@
 
     <main>
         <hr>
-        <div class="register-card">
-            <h2 class="form-title">Реєстрація</h2>
+        <div class="product-wrapper">
+            <button id="prev-btn" class="nav-arrow"><i class="fas fa-chevron-left"></i></button>
 
-            <form class="register-form" id="regForm" novalidate>
-                <div id="success-message" class="success-msg" style="display: none;"></div>
+            <div class="product-content">
 
-                <label>
-                    Ім'я:
-                    <input type="text" id="reg-name" placeholder="Введіть ваше ім'я">
-                </label>
+                <div class="product-visual">
+                    <img id="p-image" src="../images/mini1.png" alt="Бокс мініатюрок">
+                </div>
 
-                <label>
-                    Email:
-                    <input type="email" id="reg-email" placeholder="Введіть вашу пошту">
-                </label>
+                <div class="product-info">
+                    <h1 id="p-title">The Ethereal Blooms Collection</h1>
+                    <p id="p-desc" class="description">Опис товару завантажується...</p>
 
-                <label>
-                    Номер телефону:
-                    <input type="tel" id="reg-phone" placeholder="Введіть номер телефону">
-                </label>
+                    <div class="notes-block">
+                        <p><strong>Верхні ноти:</strong> <span id="p-top">...</span></p>
+                        <p><strong>Ноти серця:</strong> <span id="p-heart">...</span></p>
+                        <p><strong>Кінцеві ноти:</strong> <span id="p-base">...</span></p>
+                        <div class="comp-wrapper">
+                            <strong>Склад:</strong>
+                            <span id="p-comp" class="composition-text text-clamp">...</span>
+                        </div>
+                        <button id="btn-comp" class="read-more-btn">Читати більше</button>
+                    </div>
 
-                <label>
-                    Дата народження:
-                    <input type="date" id="reg-date">
-                </label>
+                    <div class="price-action">
+                        <h2 id="p-price">2000₴</h2>
+                        <a href="cart.html" class="btn-primary" style="color: white;">Додати до кошику</a>
+                    </div>
+                </div>
+            </div>
 
-                <label>
-                    Пароль:
-                    <input type="password" id="reg-pass" placeholder="Введіть пароль">
-                </label>
-
-                <label>
-                    Продублюйте пароль:
-                    <input type="password" id="reg-pass-confirm" placeholder="Продублюйте пароль">
-                </label>
-
-                <button type="submit" class="btn-submit">Зареєструватись</button>
-            </form>
+            <button id="next-btn" class="nav-arrow"><i class="fas fa-chevron-right"></i></button>
         </div>
-
-        <p class="login-link">
-            Вже маєте акаунт?
-            <a href="login.html">Увійти</a>
-        </p>
-
         <hr>
     </main>
 
+    <!-- Навігація -->
     <footer>
         <!-- Товар -->
         <div>
