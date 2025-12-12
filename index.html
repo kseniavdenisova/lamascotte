@@ -2,6 +2,8 @@
 <html lang="uk">
 <head>
     <title>la mascotte - унікальні парфуми</title>
+    <link rel="icon" href="images/logo.png" type="image/jpeg">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 
@@ -11,6 +13,9 @@
 <body>
     <header>
         <b>la mascotte</b>
+        <button id="theme-toggle" class="theme-btn" aria-label="Змінити тему">
+            <i class="fas fa-moon"></i>
+        </button>
 
         <button class="menu-toggle" aria-label="Відкрити меню">
             <i class="fas fa-bars"></i>
@@ -60,10 +65,10 @@
                 </div>
 
                 <div class="discount-item">
-                    <a href="html/product_information.html">
+                    <a href="html/mini.html">
                         <img src="images/new_clients_disc2.jpg" alt="Бокс мініатюрок"  class="discount-img discount-img-large">
                     </a>
-                    <a href="html/product_information.html" class="product-name">Бокс мініатюрок</a>
+                    <a href="html/mini.html" class="product-name">Бокс мініатюрок</a>
                     <div class="price">
                         <span class="new_price">2000₴</span>
                         <span class="old_price"><s>2500₴</s></span>
@@ -111,21 +116,10 @@
         </div>
 
         <p>&copy; 2025 la mascotte. Всі права захищені.</p>
+        <p id="footer-date" class="date-text"></p>
     </footer>
 
-    <script>
-        // Відкриття/закриття меню
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.main-nav').classList.toggle('active');
-        });
-
-        // Закриваємо меню при кліку на посилання
-        document.querySelectorAll('.main-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.main-nav').classList.remove('active');
-            });
-        });
-    </script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
 
