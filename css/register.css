@@ -13,6 +13,7 @@
     text-align: center;
     margin-bottom: 15px;
     font-weight: 600;
+    color: var(--form-text-color);
 }
 
 /* Форма */
@@ -29,6 +30,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        color: var(--form-text-color);
     }
 
     /* Інпут */
@@ -67,4 +69,27 @@
     text-align: center;
     margin-top: -15px;
     font-size: 14px;
+}
+
+.register-form input.error {
+    border-bottom-color: #ff3333 !important; /* Червона лінія */
+}
+
+/* Текст помилки під полем */
+.error-text {
+    color: #ff3333;
+    font-size: 12px;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+
+/* Повідомлення про успішну реєстрацію */
+.success-msg {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
 }

@@ -6,7 +6,44 @@
 @import url("../css/about.css");
 @import url("../css/index.css");
 @import url("../css/adapt.css");
+@import url("../css/mini.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+/* Світла тема за замовчуванням */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #ffffff;
+    --footer-bg: #f2f2f2;
+    --accent-color: #8a3ffc;
+    --shadow-color: rgba(0,0,0,0.05);
+    --btn-bg: #000000;
+    --btn-text: #ffffff;
+    --btn-bg-hover: #8a3ffc;
+    --form-text-color: #000;
+}
+
+/* Налаштування для Темної теми */
+body.dark-theme header nav a.nav-highlight {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+body.dark-theme {
+    --bg-color: #1A0F14;
+    --text-color: #E8DCEB;
+    --heading-color: #F2EAF5;
+    --header-bg: #160B10;
+    --footer-bg: #12090D;
+    --accent-color: #E2B98E;
+    --shadow-color: rgba(255,255,255,0.05);
+    --btn-bg: #D4A373;
+    --btn-text: #1A0F14;
+    --btn-bg-hover: #E2B98E;
+    --form-text-color: #000;
+}
+
+/* Основні стилі */
 
 header {
     padding: 15px 20px;
@@ -14,48 +51,71 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: var(--header-bg);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px var(--shadow-color);
+    transition: background 0.3s;
 }
 
     header nav {
         display: flex;
         gap: 20px;
     }
-
         header nav a {
             font-size: 16px;
-            text-decoration: none;
+            color: var(--text-color) !important;
+            display: inline-block;
+            border-radius: 8px;
         }
 
+            header nav a:hover {
+                color: var(--accent-color) !important;
+            }
+
+            header nav a.nav-highlight {
+                background-color: rgba(138, 63, 252, 0.15) !important;
+                color: var(--accent-color) !important;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                transition: all 0.3s ease;
+            }
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 h1, h2, h3, h4 {
     font-weight: 700;
+    color: var(--text-color);
 }
 
-
-main hr{
+main hr {
     width: 100%;
     max-width: 1300px;
+    border-color: var(--text-color);
+    opacity: 0.2;
 }
 
 /* Базове оформлення посилань */
 a {
-    color: #000;
+    color: var(--text-color);
     text-decoration: none;
     transition: 0.2s ease;
 }
 
     a:hover {
-        color: #8a3ffc;
+        color: var(--accent-color);
     }
+
+/* Специфічне правило для темної теми, щоб посилання були яскравіші */
+body.dark-theme a:hover {
+    color: #D4A373;
+}
+
 .discount-row {
     display: flex;
     justify-content: center;
@@ -75,9 +135,10 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px;
-    background-color: #f2f2f2;
+    background-color: var(--footer-bg);
     flex-wrap: wrap;
     gap: 20px;
+    transition: background-color 0.3s;
 }
 
     footer div {
@@ -94,5 +155,30 @@ footer {
         flex-basis: 100%;
         text-align: center;
         margin-top: 20px;
+        color: var(--text-color);
     }
 
+    footer .date-text {
+        font-size: 14px;
+        color: var(--text-color);
+        margin-top: 5px;
+        font-style: italic;
+        text-transform: capitalize;
+    }
+
+/* Стилі для кнопки перемикання теми */
+.theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 10px;
+    margin-right: 15px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+    .theme-btn:hover {
+        transform: rotate(20deg);
+        color: var(--accent-color);
+    }

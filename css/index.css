@@ -1,8 +1,8 @@
 ﻿.btn-primary {
     display: inline-block;
     padding: 12px 22px;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
     text-decoration: none;
     border-radius: 10px;
     font-size: 16px;
@@ -10,7 +10,7 @@
 }
 
     .btn-primary:hover {
-        background-color: rgba(0,0,0,0.35);
+        background-color: var(--btn-bg-hover);
     }
 
 .discount-grid {
@@ -37,7 +37,7 @@
 .discount-img-large {
     width: 100%;
     max-width: 300px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .product-name {
@@ -57,3 +57,4 @@
 .old_price {
     color: slategray;
 }
+

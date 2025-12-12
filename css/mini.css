@@ -1,0 +1,142 @@
+﻿/* Контейнер для вирівнювання стрілок і контенту */
+.product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Стрілки */
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--btn-bg);
+    transition: 0.2s;
+    padding: 10px;
+}
+
+    .nav-arrow:hover {
+        color: var(--btn-bg-hover);
+        transform: scale(1.1);
+    }
+
+/* Внутрішній блок */
+.product-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    align-items: center;   
+}
+
+/* Картинка */
+.product-visual {
+    flex: 1;
+    text-align: center;
+}
+
+    .product-visual img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        max-height: 500px;
+        object-fit: contain;
+    }
+
+/* Текст */
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--text-color);
+}
+
+.notes-block {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--form-text-color);
+}
+
+.price-action {
+    margin-top: -10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.composition-text {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Клас, який обрізає текст до 1 рядка */
+.text-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Кількість рядків, які видно */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Клас, який показує весь текст*/
+.text-expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+/* Стиль для кнопки "Читати більше" */
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+    .read-more-btn:hover {
+        color: #8a3ffc;
+    }
+/* Адаптивність для телефонів */
+@media (max-width: 768px) {
+    .product-wrapper {
+        margin-top: 50px;
+    }
+
+    .nav-arrow {
+        position: absolute;
+        top: 30%;
+        z-index: 10;
+        background: rgba(255,255,255,0.7);
+        border-radius: 50%;
+    }
+
+    #prev-btn {
+        left: 0;
+    }
+
+    #next-btn {
+        right: 0;
+    }
+
+    .product-content {
+        flex-direction: column;
+    }
+}

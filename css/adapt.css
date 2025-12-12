@@ -7,13 +7,21 @@
     cursor: pointer;
     padding: 10px;
     z-index: 1001;
+    color: var(--text-color);
+    transition: color 0.3s;
 }
+
+    .menu-toggle:hover {
+        color: var(--accent-color);
+    }
 
 /* Стилі для самого меню */
 .main-nav {
     display: flex;
     gap: 30px;
     align-items: center;
+    color: var(--text-color);
+    transition: color 0.2s;
 }
 
     .main-nav a {
@@ -40,33 +48,33 @@ header .logo {
     margin-left: 50px;
 }
 
-.main-nav {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 280px;
-    height: 100vh;
-    background: #fff;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 100px 30px 40px;
-    transition: left 0.35s ease;
-    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
-    z-index: 1000;
-    overflow-y: auto;
-}
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--header-bg);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 100px 30px 40px;
+        transition: left 0.35s ease;
+        box-shadow: 5px 0 15px var(--shadow-color);
+        z-index: 1000;
+        overflow-y: auto;
+    }
 
     .main-nav.active {
         left: 0;
     }
 
-    .main-nav a {
-        font-size: 20px;
-        padding: 12px 0;
-        width: 100%;
-        border-bottom: 1px solid #eee;
-    }
+        .main-nav a {
+            font-size: 20px;
+            padding: 12px 0;
+            width: 100%;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+        }
 
         .main-nav a:last-child {
             border-bottom: none;
